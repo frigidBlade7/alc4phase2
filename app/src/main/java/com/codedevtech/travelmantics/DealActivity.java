@@ -188,6 +188,11 @@ public class DealActivity extends AppCompatActivity {
         txtTitle.setEnabled(isEnabled);
         txtDescription.setEnabled(isEnabled);
         txtPrice.setEnabled(isEnabled);
+        if(isEnabled)
+            btnImage.setVisibility(View.VISIBLE);
+        else
+            btnImage.setVisibility(View.GONE);
+
         btnImage.setEnabled(isEnabled);
 
     }
